@@ -18,5 +18,5 @@ export const Lottie = component$(({ class: className, path, idContainer }: Props
 		});
 	});
 
-	return <div class={className} id={`lottie-${idContainer}`}></div>;
+	return <div class={`fadeIn ${className}`} id={`lottie-${idContainer}`}></div>;
 });

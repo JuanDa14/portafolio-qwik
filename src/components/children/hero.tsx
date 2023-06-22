@@ -19,7 +19,7 @@ export default component$(() => {
 						Fullstack developer
 					</p>
 					<p class='sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0'>
-						+1 año de experiencia en desarrollo web aplicaciones web, aplicando buenas
+						+1 año de experiencia en desarrollo web, aplicando buenas
 						prácticas y metodologías ágiles para garantizar resultados eficientes y de
 						calidad.
 					</p>
