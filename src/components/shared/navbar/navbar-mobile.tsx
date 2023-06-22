@@ -11,7 +11,7 @@ export default component$(({ showMenu, changeShowMenu }: Props) => {
 	return (
 		<nav class='px-5 sm:hidden flex flex-col gap-4 py-4'>
 			<div class='flex justify-between'>
-				<a href='#inicio' class='text-black dark:text-white'>
+				<a title='IconoInicio' href='#inicio' class='text-black dark:text-white'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
