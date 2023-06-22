@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+main {
+	overflow: hidden;
+}
+
+.Toastify__toast-body {
+	color: #000000;
+	text-align: center;
+}
+
+.Toastify__toast.Toastify__toast-theme--dark.Toastify__toast--default.Toastify__toast--close-on-click {
+	background-color: #ffffff !important;
+}
+
+.Toastify__progress-bar-theme--dark {
+	background-color: #3a84f5 !important;
+}
+
+.Toastify__toast-icon.Toastify--animate-icon.Toastify__zoom-enter {
+	color: #000000;
+}
+
+.Toastify {
+	font-size: clamp(0.94rem, calc(0.95rem + -0.01vw), 0.94rem);
+}
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.dflex-none {
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3a84f5;
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #1b1b2f;
+}
+
+.fadeIn {
+	animation: fadein 0.5s linear 1 forwards;
+}
+
+.showAlert {
+	animation: showAlert 0.5s forwards;
+}
+
+.hideAlert {
+	animation: hideAlert 0.5s forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes showAlert {
+	0% {
+		right: -500px;
+	}
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes hideAlert {
+	0% {
+		right: 0;
+	}
+	100% {
+		right: -500px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	@keyframes showAlert {
+		0% {
+			right: -500px;
+		}
+		100% {
+			right: 15px;
+		}
+	}
+
+	@keyframes hideAlert {
+		0% {
+			right: 15px;
+		}
+		100% {
+			right: -500px;
+		}
+	}
+}
