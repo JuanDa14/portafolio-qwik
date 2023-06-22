@@ -106,7 +106,7 @@ export const projects = [
 	{
 		title: 'Frontend Developer',
 		description:
-			'Actualmente trabajo en el desarrollo de módulos en diferentes tipos de aplicaciones web para la empresa FMSAC. Aplicando buenas prácticas y asegurando la calidad del código.',
+			'Desarrollo y mantenimiento de módulos de diferentes aplicaciones web para la empresa FMSAC. Aplicando buenas prácticas y asegurando la calidad del código.',
 		technologies: ['PHP', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
@@ -116,9 +116,9 @@ export const projects = [
 		byMe: false,
 	},
 	{
-		title: 'Freelancer',
+		title: 'Freelance',
 		description:
-			'Brinde mantenimiento a una aplicación web, mejorando su rendimiento, agregando nuevas funcionalidades y asegurando la seguridad de la misma.',
+			'Mantenimiento a la página web YahuahBible, mejore su rendimiento, agregue nuevas funcionalidades y asegure su integridad',
 		technologies: ['Laravel', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
@@ -128,9 +128,9 @@ export const projects = [
 		byMe: false,
 	},
 	{
-		title: 'Fullstack Developer',
+		title: 'FullStack Developer',
 		description:
-			'Creación de una aplicación de gestión de proyectos. Permite crear proyectos, agregar tareas, asignarlas a usuarios y cambiar su estado.',
+			'Crea tu equipo de desarrollo y mantenlos organizados con este calendario, crea tareas, asigna tareas a tus compañeros y mucho más.',
 		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
 		imageUrl: 'proyecto-1',
 		githubUrl: 'https://github.com/JuanDa14/calendar-front',
@@ -140,9 +140,9 @@ export const projects = [
 		byMe: true,
 	},
 	{
-		title: 'Fullstack Developer',
+		title: 'FullStack Developer',
 		description:
-			'Aplicación web que permite crear enlaces de árbol, es decir, enlaces que se pueden compartir con otras personas y que al hacer click en ellos, se puede ver el árbol genealógico de la persona que lo creó.',
+			'Crea tu árbol de enlaces de tus redes sociales, comparte tu árbol con tus amigos y descubre los árboles de tus amigos.',
 		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
 		imageUrl: 'proyecto-2',
 		githubUrl: 'https://github.com/JuanDa14/treelink-frontend',
