@@ -15,7 +15,7 @@ export default component$(() => {
 		<header
 			class={`${
 				isScrolled.value ? '' : 'border-b shadow-sm border-white dark:border-gray-500'
-			} fixed top-0 w-full z-50 text-pallete-light-gray-500 transition-all duration-500 ease-in-out font-inter bg-white dark:bg-dark-body`}
+			} fixed top-0 w-full z-50 text-pallete-light-gray-500 bg-white dark:bg-dark-body`}
 			style={{
 				backdropFilter: 'saturate(180%) blur(5px)',
 				background: `${

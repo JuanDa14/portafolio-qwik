@@ -8,7 +8,7 @@ export default component$(() => {
 			<a
 				title='IconoInicio'
 				href='#inicio'
-				class='hover:scale-110 transition-all duration-300 ease-in-out'
+				class='hover:scale-110'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -26,7 +26,7 @@ export default component$(() => {
 				</svg>
 			</a>
 			<ul class='flex gap-4 text-sm items-center font-medium'>
-				<li class='py-4 transition-colors duration-300 ease-in-out'>
+				<li class='py-4'>
 					<a
 						title='Inicio'
 						href='#inicio'
@@ -35,7 +35,7 @@ export default component$(() => {
 						Inicio
 					</a>
 				</li>
-				<li class='py-4 transition-colors duration-300 ease-in-out'>
+				<li class='py-4'>
 					<a
 						title='Conoceme'
 						href='#conoceme'
@@ -44,7 +44,7 @@ export default component$(() => {
 						Conoceme
 					</a>
 				</li>
-				<li class='py-4 transition-colors duration-300 ease-in-out'>
+				<li class='py-4'>
 					<a
 						title='Proyectos'
 						href='#proyectos'
@@ -53,7 +53,7 @@ export default component$(() => {
 						Proyectos
 					</a>
 				</li>
-				<li class='py-4 transition-colors duration-300 ease-in-out'>
+				<li class='py-4'>
 					<a
 						title='Contacto'
 						href='#contacto'
@@ -62,7 +62,7 @@ export default component$(() => {
 						Contacto
 					</a>
 				</li>
-				<li class='py-4 transition-colors duration-300 ease-in-out'>
+				<li class='py-4'>
 					<ModeSwitch />
 				</li>
 			</ul>

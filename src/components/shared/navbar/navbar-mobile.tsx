@@ -34,7 +34,7 @@ export default component$(({ showMenu, changeShowMenu }: Props) => {
 			</div>
 			<div class={`h-screen ${showMenu ? '' : 'hidden'}`}>
 				<ul class='flex flex-col justify-center items-center gap-6 font-medium text-black'>
-					<li class='text-step-0 py-4 hover:text-blue-500 transition-colors duration-300 ease-in-out'>
+					<li class='text-step-0 py-4 hover:text-blue-500'>
 						<a
 							title='Inicio'
 							href='#inicio'
@@ -44,7 +44,7 @@ export default component$(({ showMenu, changeShowMenu }: Props) => {
 							Inicio
 						</a>
 					</li>
-					<li class='text-step-0 py-4 transition-colors duration-300 ease-in-out'>
+					<li class='text-step-0 py-4'>
 						<a
 							class='text-black dark:text-white hover:text-blue-500 dark:hover:text-gray-400'
 							title='Conoceme'
@@ -54,7 +54,7 @@ export default component$(({ showMenu, changeShowMenu }: Props) => {
 							Conoceme
 						</a>
 					</li>
-					<li class='text-step-0 py-4 transition-colors duration-300 ease-in-out'>
+					<li class='text-step-0 py-4'>
 						<a
 							class='text-black dark:text-white hover:text-blue-500 dark:hover:text-gray-400'
 							title='Proyectos'
@@ -64,7 +64,7 @@ export default component$(({ showMenu, changeShowMenu }: Props) => {
 							Proyectos
 						</a>
 					</li>
-					<li class='text-step-0 py-4 transition-colors duration-300 ease-in-out'>
+					<li class='text-step-0 py-4'>
 						<a
 							class='text-black dark:text-white hover:text-blue-500 dark:hover:text-gray-400'
 							title='Contacto'

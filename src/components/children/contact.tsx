@@ -54,7 +54,7 @@ export default component$(() => {
 							type='text'
 							value={formState.name}
 							placeholder='Nombre'
-							class='border outline-none border-pallete-light-gray rounded-md w-full p-2 mb-4 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray transition-all duration-300 ease-in-out dark:placeholder:bg-dark-input dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
+							class='border outline-none border-pallete-light-gray rounded-md w-full p-2 mb-4 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray dark:placeholder:bg-dark-input dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
 						/>
 						<input
 							required
@@ -65,7 +65,7 @@ export default component$(() => {
 							name='email'
 							type='email'
 							value={formState.email}
-							class='border outline-none border-pallete-light-gray rounded-md w-full p-2 mb-4 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray transition-all duration-300 ease-in-out dark:placeholder:bg-dark-input dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
+							class='border outline-none border-pallete-light-gray rounded-md w-full p-2 mb-4 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray dark:placeholder:bg-dark-input dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
 							placeholder='Correo electrónico'
 						/>
 						<input
@@ -78,7 +78,7 @@ export default component$(() => {
 							type='text'
 							value={formState.subject}
 							placeholder='Asunto'
-							class='border outline-none border-pallete-light-gray rounded-md w-full p-2 mb-4 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray transition-all duration-300 ease-in-out dark:placeholder:bg-dark-input dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
+							class='border outline-none border-pallete-light-gray rounded-md w-full p-2 mb-4 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray dark:placeholder:bg-dark-input dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
 						/>
 						<textarea
 							required
@@ -90,12 +90,12 @@ export default component$(() => {
 							rows={5}
 							value={formState.message}
 							placeholder='Mensaje'
-							class='border outline-none border-pallete-light-gray resize-none rounded-md w-full p-2 mb-2 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray transition-all duration-300 ease-in-out dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
+							class='border outline-none border-pallete-light-gray resize-none rounded-md w-full p-2 mb-2 placeholder:text-sm placeholder:text-pallete-light-gray hover:border-pallete-gray dark:bg-dark-input dark:placeholder:text-gray-400 dark:border-gray-500 dark:hover:border-gray-500 dark:text-white dark:focus:border-blue-500'
 						></textarea>
 						<button
 							disabled={loading.value}
 							type='submit'
-							class='font-semibold px-5 py-2 rounded-md border bg-black text-white hover:text-black hover:bg-white hover:border-black transition-all duration-300 ease-in-out dark:bg-blue-600 dark:border-none dark:hover:bg-blue-700 dark:hover:text-white disabled:opacity-50'
+							class='font-semibold px-5 py-2 rounded-md border bg-black text-white hover:text-black hover:bg-white hover:border-black dark:bg-blue-600 dark:border-none dark:hover:bg-blue-700 dark:hover:text-white disabled:opacity-50'
 						>
 							{loading.value ? 'Enviando...' : 'Enviar'}
 						</button>

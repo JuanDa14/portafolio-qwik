@@ -7,8 +7,8 @@ export default component$(() => {
   {projects
     .sort((a, b) => new Date(a.updatedAt).getFullYear() - new Date(b.createdAt).getFullYear())
     .map((project, index) => (
-      <li key={index}>
-        <div class="cursor-pointer border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden">
+      <li key={index} class='hover:shadow'>
+        <div class="border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden">
           <div class="p-4">
             <h2 class="capitalize font-semibold text-black dark:text-white">
               {project.title}
@@ -46,7 +46,7 @@ export default component$(() => {
             <div class="flex justify-end gap-2 capitalize">
               {project.byMe ? (
                 <>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" title="Github">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" title="Github" class='hover:scale-110'>
                     <img
                       width={25}
                       height={25}
@@ -55,7 +55,7 @@ export default component$(() => {
                       class='dark:filter dark:invert'
                     />
                   </a>
-                  <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" title="Ver Proyecto">
+                  <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" title="Ver Proyecto" class='hover:scale-110'>
                     <img
                       width={25}
                       height={25}
@@ -67,7 +67,7 @@ export default component$(() => {
                 </>
               ) : (
                 <>
-                  <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" title="Ver">
+                  <a href={project.websiteUrl} target="_blank" rel="noopener noreferrer" title="Ver" class='hover:scale-110'>
                     <img
                       width={25}
                       height={25}

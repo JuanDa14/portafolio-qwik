@@ -12,29 +12,15 @@ html {
 	scroll-behavior: smooth;
 }
 
+button,
+li,
+a,
+input {
+	transition: all 0.3s ease-in-out;
+}
+
 main {
 	overflow: hidden;
-}
-
-.Toastify__toast-body {
-	color: #000000;
-	text-align: center;
-}
-
-.Toastify__toast.Toastify__toast-theme--dark.Toastify__toast--default.Toastify__toast--close-on-click {
-	background-color: #ffffff !important;
-}
-
-.Toastify__progress-bar-theme--dark {
-	background-color: #3a84f5 !important;
-}
-
-.Toastify__toast-icon.Toastify--animate-icon.Toastify__zoom-enter {
-	color: #000000;
-}
-
-.Toastify {
-	font-size: clamp(0.94rem, calc(0.95rem + -0.01vw), 0.94rem);
 }
 
 .line-clamp {

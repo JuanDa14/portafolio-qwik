@@ -30,7 +30,7 @@ export default component$(() => {
 							title='Descargar CV'
 							download={true}
 							target='_blank'
-							class='text-step--1 font-lato flex shadow-lg px-2 py-2 items-center gap-2 rounded-md bg-black text-white hover:shadow-xl transition-all duration-300 ease-in-out dark:bg-blue-600 dark:hover:bg-blue-700'
+							class='text-step--1 font-lato flex shadow-lg px-2 py-2 items-center gap-2 rounded-md bg-black text-white hover:shadow-xl hover:opacity-80 dark:bg-blue-600 dark:hover:bg-blue-700'
 						>
 							<p>Descargar CV</p>
 							<svg
