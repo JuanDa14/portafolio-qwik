@@ -7,8 +7,8 @@ export default component$(() => {
   {projects
     .sort((a, b) => new Date(a.updatedAt).getFullYear() - new Date(b.createdAt).getFullYear())
     .map((project, index) => (
-      <li key={index} class='hover:shadow'>
-        <div class="border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden">
+      <li key={index}>
+        <div class="border bg-white dark:bg-dark-body dark:border-gray-600 relative flex items-center justify-between rounded-lg overflow-hidden hover:shadow">
           <div class="p-4">
             <h2 class="capitalize font-semibold text-black dark:text-white">
               {project.title}
