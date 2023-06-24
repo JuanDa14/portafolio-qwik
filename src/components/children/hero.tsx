@@ -16,7 +16,7 @@ export default component$(() => {
 						Juan Morales
 					</h1>
 					<p class='text-step-2 font-bold capitalize font-code text-black dark:text-white'>
-						Fullstack developer
+						FullStack developer
 					</p>
 					<p class='sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0'>
 						+1 año de experiencia en desarrollo web, aplicando buenas
