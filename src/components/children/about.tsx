@@ -27,7 +27,7 @@ export default component$(() => {
 				</div>
 			</div>
 			<div>
-				<h2 class='text-step-1 uppercase font-bold text-black dark:text-white'>Skills:</h2>
+				<h2 class='text-step-1 uppercase font-bold text-black dark:text-white'>Skills</h2>
 				<div class='flex flex-wrap'>
 					<div class='w-1/2 md:w-1/3 mt-4'>
 						<CardAbilities type='Frontend' />
