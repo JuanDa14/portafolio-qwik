@@ -1,4 +1,4 @@
-import { component$, useContext, $, useSignal } from '@builder.io/qwik';
+import { component$, useContext, $ } from '@builder.io/qwik';
 import { UIContext } from '~/context/ui/ui-context';
 
 const darkIcon = (
