@@ -7,6 +7,7 @@ import {
 	useStore,
 	useVisibleTask$,
 	$,
+	useOnDocument,
 } from '@builder.io/qwik';
 import { UIContext } from './ui-context';
 
@@ -39,6 +40,8 @@ export const UIProvider = component$(() => {
 		}
 	});
 
+	useOnDocument('scroll', handleScroll);
+
 	useVisibleTask$(({ track }) => {
 		track(() => UI_Initial_State.theme.value);
 
@@ -49,15 +52,7 @@ export const UIProvider = component$(() => {
 		}
 	});
 
-	useVisibleTask$(() => {
-		window.addEventListener('scroll', handleScroll);
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	});
-
-	useVisibleTask$(({ track }) => {
+	useVisibleTask$(({ track, cleanup }) => {
 		track(() => UI_Initial_State.showAlert.value);
 
 		let timer: NodeJS.Timeout;
@@ -68,9 +63,9 @@ export const UIProvider = component$(() => {
 			}, 5000);
 		}
 
-		return () => {
+		cleanup(() => {
 			clearTimeout(timer);
-		};
+		});
 	});
 
 	// Usando el contexto

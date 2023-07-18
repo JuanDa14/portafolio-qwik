@@ -28,7 +28,7 @@ export default component$(() => {
                     })}
               </span>
             </p>
-            <p class="text-gray-500 line-clamp text-sm dark:text-gray-400">
+            <p class="text-gray-500 line-clamp-3 text-sm dark:text-gray-400">
               {project.description}
             </p>
             <ul class="mt-3 flex flex-wrap items-center gap-3 font-code">

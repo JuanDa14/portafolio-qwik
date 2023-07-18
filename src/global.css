@@ -15,23 +15,13 @@ html {
 button,
 li,
 a,
-input {
-	transition: all 0.2s ease-in-out;
+input,
+div {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 main {
 	overflow: hidden;
-}
-
-.line-clamp {
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
-
-.dflex-none {
-	display: none;
 }
 
 ::-webkit-scrollbar-thumb {

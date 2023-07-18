@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import CardProjects from '../card/card-projects';
+import Timeline from '../ui/timeline';
 
 export default component$(() => {
 	return (
@@ -9,7 +9,7 @@ export default component$(() => {
 					Experiencia
 				</h2>
 
-				<CardProjects />
+				<Timeline />
 			</div>
 		</section>
 	);
