@@ -1,9 +1,9 @@
 import { component$, useSignal, useStore, $, useContext } from '@builder.io/qwik';
 import { InitialStateContactForm } from '~/data/seed';
-import { Lottie } from '../lottie/lottie';
+import { Lottie } from './lottie/lottie';
 import { sendEmail } from '~/helpers/send-email';
 import { UIContext } from '~/context/ui/ui-context';
-import Alert from '../ui/alert';
+import Alert from './ui/alert';
 
 export default component$(() => {
 	const formState = useStore(InitialStateContactForm);
@@ -29,8 +29,8 @@ export default component$(() => {
 	});
 
 	return (
-		<section class='relative'>
-			<div class='px-5 md:px-3 max-w-3xl mx-auto py-10 flex flex-col gap-2' id='contacto'>
+		<section class='relative' id='contacto'>
+			<div class='px-5 md:px-3 max-w-3xl mx-auto py-10 flex flex-col gap-2'>
 				<h2 class='text-step-1 uppercase text-black dark:text-white font-bold border-gray-500 dark:border-gray-100'>
 					Contacto
 				</h2>

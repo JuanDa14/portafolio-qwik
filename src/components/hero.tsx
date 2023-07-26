@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 
-import { SocialNetworks } from '../social/social-networks';
-import { Lottie } from '../lottie/lottie';
+import { SocialNetworks } from './social/social-networks';
+import { Lottie } from './lottie/lottie';
 
 export default component$(() => {
 	return (
@@ -19,9 +19,8 @@ export default component$(() => {
 						FullStack developer
 					</p>
 					<p class='sm:mb-4 text-gray-500 dark:text-gray-400 text-step-0'>
-						+1 año de experiencia en desarrollo web, aplicando buenas
-						prácticas y metodologías ágiles para garantizar resultados eficientes y de
-						calidad.
+						+1 año de experiencia en desarrollo web, aplicando buenas prácticas y metodologías
+						ágiles para garantizar resultados eficientes y de calidad.
 					</p>
 					<div class='flex justify-between items-center mt-4 md:mt-0'>
 						<SocialNetworks />

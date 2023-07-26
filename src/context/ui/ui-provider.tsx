@@ -42,13 +42,27 @@ export const UIProvider = component$(() => {
 
 	useOnDocument('scroll', handleScroll);
 
+	useVisibleTask$(() => {
+		const colorTheme = localStorage.getItem('theme') as 'light' | 'dark';
+
+		if (colorTheme) {
+			if (colorTheme === 'dark') {
+				theme.value = 'dark';
+			} else {
+				theme.value = 'light';
+			}
+		}
+	});
+
 	useVisibleTask$(({ track }) => {
 		track(() => UI_Initial_State.theme.value);
 
 		if (theme.value === 'dark') {
 			document.documentElement.classList.add('dark');
+			localStorage.setItem('theme', 'dark');
 		} else {
 			document.documentElement.classList.remove('dark');
+			localStorage.setItem('theme', 'light');
 		}
 	});
 
