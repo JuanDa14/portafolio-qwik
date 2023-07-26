@@ -4,7 +4,7 @@ import { Lottie } from './lottie/lottie';
 
 export default component$(() => {
 	return (
-		<section class='px-5 md:px-3 max-w-3xl mx-auto py-10' id='conoceme'>
+		<section class='px-5 md:px-3 max-w-4xl mx-auto py-10' id='conoceme'>
 			<h2 class='text-step-1 text-black uppercase font-bold mb-4 border-gray-500 dark:border-gray-100 dark:text-white'>
 				Sobre mí
 			</h2>

@@ -106,7 +106,7 @@ export const projects = [
 	{
 		title: 'Frontend Developer',
 		description:
-			'Desarrollo y mantenimiento de módulos de diferentes aplicaciones web para la empresa FMSAC. Aplicando buenas prácticas y asegurando la calidad del código.',
+			'Desarrollo y mantenimiento de módulos en diferentes aplicaciones web para la empresa FMSAC.',
 		technologies: ['PHP', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
@@ -118,7 +118,7 @@ export const projects = [
 	{
 		title: 'Freelance',
 		description:
-			'Mantenimiento a la página web YahuahBible, mejore su rendimiento, agregue nuevas funcionalidades y asegure su integridad',
+			'Mantenimiento a la página web YahuahBible, mejore su rendimiento, agregue nuevas funcionalidades y asegure su integridad.',
 		technologies: ['Laravel', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',

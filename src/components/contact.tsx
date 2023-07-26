@@ -30,7 +30,7 @@ export default component$(() => {
 
 	return (
 		<section class='relative' id='contacto'>
-			<div class='px-5 md:px-3 max-w-3xl mx-auto py-10 flex flex-col gap-2'>
+			<div class='px-5 md:px-3 max-w-4xl mx-auto py-10 flex flex-col gap-2'>
 				<h2 class='text-step-1 uppercase text-black dark:text-white font-bold border-gray-500 dark:border-gray-100'>
 					Contacto
 				</h2>
