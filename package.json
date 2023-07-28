@@ -41,7 +41,7 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
-    "axios": "^1.4.0",
-    "lottie-web": "^5.12.2"
+    "lottie-web": "^5.12.2",
+    "qwik-image": "^0.0.7"
   }
 }

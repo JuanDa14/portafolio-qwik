@@ -9,7 +9,7 @@ interface Props {
 
 export default component$(({ isNameActive }: Props) => {
 	return (
-		<nav class='hidden py-1 px-5 md:px-0 mx-auto sm:flex justify-between items-center max-w-4xl'>
+		<nav class='hidden py-1 px-5 mx-auto sm:flex justify-between items-center max-w-4xl'>
 			<a title='IconoInicio' href='#inicio' class='hover:scale-110'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'

@@ -4,11 +4,6 @@ module.exports = {
 	content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
 	theme: {
 		extend: {
-			fontFamily: {
-				code: ['Source Code Pro', 'monospace'],
-				inter: ['Inter', 'sans-serif'],
-			},
-
 			colors: {
 				pallete: {
 					gray: '#333',
@@ -39,7 +34,7 @@ module.exports = {
 				xs: '450px',
 			},
 			gridTemplateColumns: {
-				'fit-200': 'repeat(auto-fit, minmax(200px, 1fr))',
+				'fit-200': 'repeat(auto-fill, minmax(200px, 1fr))',
 				'fit-250': 'repeat(auto-fit, minmax(250px, 1fr))',
 				'fit-500': 'repeat(auto-fit, minmax(500px, 1fr))',
 			},

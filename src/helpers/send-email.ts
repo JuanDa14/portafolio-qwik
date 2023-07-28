@@ -1,20 +1,19 @@
-import axios, { type AxiosError } from 'axios';
-
-type ServerError = { errors: { message: string; field: string }[] };
-
 export const sendEmail = async <T>(values: T) => {
 	try {
-		await axios.post(`${import.meta.env.PUBLIC_API_URL}/contact`, values);
-		return { ok: true };
+		const resp = await fetch(`${import.meta.env.PUBLIC_API_URL}/contact`, {
+			body: JSON.stringify(values),
+			method: 'POST',
+		});
+
+		const data = await resp.json();
+
+		return data;
 	} catch (error) {
-		if (axios.isAxiosError(error)) {
-			const serverError = error as AxiosError<ServerError>;
-			if (serverError && serverError.response) {
-				return {
-					ok: false,
-					error: serverError.response.data.errors[0].message,
-				};
-			}
+		if (error instanceof Error) {
+			return {
+				ok: false,
+				error: error.message,
+			};
 		} else {
 			return {
 				ok: false,

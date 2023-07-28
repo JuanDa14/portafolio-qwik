@@ -5,7 +5,7 @@
 *,
 *::after,
 *::before {
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 html {
@@ -17,7 +17,11 @@ li,
 a,
 input,
 div {
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+img {
+	transition: transform 0.2s ease;
 }
 
 main {

@@ -1,19 +1,28 @@
 import { socials } from '~/data/seed';
 
-export const SocialNetworks = () => {
+interface Props {
+	class: string;
+	showTitle?: boolean;
+	classNameLink?: string;
+}
+
+export const SocialNetworks = ({ class: className, showTitle, classNameLink }: Props) => {
 	return (
-		<div class='flex gap-2 items-center text-step-1'>
+		<ul class={className}>
 			{socials.map(({ href, title, icon }) => (
-				<a key={title} class='hover:scale-125' title={title} href={href} target='_blank'>
-					<img
-						width={35}
-						height={35}
-						src={`/icons/${icon}.svg`}
-						alt={title}
-						class='dark:filter dark:invert'
-					/>
-				</a>
+				<li class={classNameLink} key={title}>
+					<a title={title} href={href} target='_blank'>
+						<img
+							width={35}
+							height={35}
+							src={`/icons/${icon}.svg`}
+							alt={title}
+							class='dark:filter dark:invert hover:scale-125'
+						/>
+					</a>
+					{showTitle && <span class='dark:text-white'>{title}</span>}
+				</li>
 			))}
-		</div>
+		</ul>
 	);
 };

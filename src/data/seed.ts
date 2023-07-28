@@ -58,12 +58,7 @@ export const abilities: {
 		level: 'Intermedio',
 		icon: 'laravel',
 	},
-	{
-		name: 'Express',
-		type: 'Backend',
-		level: 'Intermedio',
-		icon: '',
-	},
+
 	{
 		name: 'NodeJs',
 		type: 'Backend',
@@ -119,7 +114,7 @@ export const projects = [
 		title: 'Freelance',
 		description:
 			'Mantenimiento a la página web YahuahBible, mejore su rendimiento, agregue nuevas funcionalidades y asegure su integridad.',
-		technologies: ['Laravel', 'Html', 'Css', 'JavaScript', 'Bootstrap', 'MySQL'],
+		technologies: ['Laravel', 'Html', 'Css', 'JavaScript', 'TailwindCss', 'MySQL'],
 		imageUrl: 'proyecto-2',
 		githubUrl: '#',
 		websiteUrl: 'https://www.yahuahbible.com',
@@ -128,7 +123,7 @@ export const projects = [
 		byMe: false,
 	},
 	{
-		title: 'FullStack Developer',
+		title: 'CalendarApp',
 		description:
 			'Crea tu equipo de desarrollo y mantenlos organizados con este calendario, crea tareas, asigna tareas a tus compañeros y mucho más.',
 		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
@@ -140,7 +135,7 @@ export const projects = [
 		byMe: true,
 	},
 	{
-		title: 'FullStack Developer',
+		title: 'TreelinkApp',
 		description:
 			'Crea tu árbol de enlaces de tus redes sociales, comparte tu árbol con tus amigos y descubre los árboles de tus amigos.',
 		technologies: ['React', 'JavaScript', 'TailwindCss', 'NodeJs', 'MongoDB'],
@@ -155,19 +150,19 @@ export const projects = [
 
 export const socials = [
 	{
-		title: 'Linkedin',
+		title: 'Juan David Morales Paredes',
 		href: 'https://www.linkedin.com/in/juan-david-morales-paredes-617342224',
 		icon: 'linkedin',
 	},
 	{
-		title: 'Github',
-		href: 'https://github.com/JuanDa14',
-		icon: 'github',
+		title: 'Ju4ncode@gmail.com',
+		href: 'mailto:ju4ncode@gmail.com',
+		icon: 'gmail',
 	},
 	{
-		title: 'Instagram',
-		href: 'https://www.instagram.com/ju4ndevelop/',
-		icon: 'instagram',
+		title: '@JuanDa14 ',
+		href: 'https://github.com/JuanDa14',
+		icon: 'github',
 	},
 ];
 
