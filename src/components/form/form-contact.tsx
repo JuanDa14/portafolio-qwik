@@ -19,7 +19,11 @@ export default component$(() => {
 
 	const onSubmit = $(async () => {
 		loading.value = true;
-		await sendEmail(formState);
+
+		let formStateObject = Object.assign({}, formState);
+
+		await sendEmail(formStateObject);
+
 		loading.value = false;
 
 		reset();
