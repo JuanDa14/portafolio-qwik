@@ -77,7 +77,7 @@ export default component$(() => {
 			<button
 				disabled={loading.value}
 				type='submit'
-				class='w-full font-semibold py-2 rounded-md border bg-black text-white hover:text-black hover:bg-white hover:border-black dark:bg-blue-600 dark:border-none dark:hover:bg-blue-700 dark:hover:text-white disabled:opacity-50'
+				class='w-full font-semibold py-2 rounded-md border bg-black text-white hover:shadow-xl dark:bg-blue-600 dark:border-none dark:hover:bg-blue-700 dark:hover:text-white disabled:opacity-50 transition-shadow ease-in-out duration-300'
 			>
 				{loading.value ? 'Enviando...' : 'Enviar'}
 			</button>

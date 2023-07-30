@@ -68,7 +68,7 @@ export default component$(() => {
 											<img
 												width={25}
 												height={25}
-												src='/icons/send.svg'
+												src='/icons/show.svg'
 												alt='send'
 												class='dark:filter dark:invert'
 											/>

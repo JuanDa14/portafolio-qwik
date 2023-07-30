@@ -150,7 +150,7 @@ export const projects = [
 
 export const socials = [
 	{
-		title: 'Juan David Morales Paredes',
+		title: '@JuanMoral3s',
 		href: 'https://www.linkedin.com/in/juan-david-morales-paredes-617342224',
 		icon: 'linkedin',
 	},

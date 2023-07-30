@@ -16,6 +16,8 @@ module.exports = {
 					body: '#1F2937',
 					container: '#111827',
 					input: '#374151',
+					header: 'hsla(210, 44%, 13%, .8)',
+					footer: 'hsla(210, 44%, 13%, 1)',
 				},
 			},
 
