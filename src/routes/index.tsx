@@ -1,10 +1,19 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { routeLoader$ } from '@builder.io/qwik-city';
+import { type InitialValues } from '@modular-forms/qwik';
+import { type ContactForm } from '~/models/contact-form-schema';
 
 import About from '~/components/about';
 import Contact from '~/components/contact';
 import Hero from '~/components/hero';
 import Project from '~/components/project';
+
+export const useContactFormLoader = routeLoader$<InitialValues<ContactForm>>(() => ({
+	name: '',
+	email: '',
+	message: '',
+}));
 
 export default component$(() => {
 	return (

@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 
-import { SocialNetworks } from './social/social-networks';
-import { Lottie } from './lottie/lottie';
+import SocialNetworks from '~/components/social-networks';
+import Lottie from '~/components/lottie';
 
 export default component$(() => {
 	return (
@@ -23,13 +23,13 @@ export default component$(() => {
 						ágiles para garantizar resultados eficientes y de calidad.
 					</p>
 					<div class='flex justify-between items-center mt-4 md:mt-0'>
-						<SocialNetworks class='flex gap-2 items-center' />
+						<SocialNetworks className='flex gap-2 items-center' />
 						<a
 							href='/docs/Juan-Morales_CV.pdf'
 							title='Descargar CV'
 							download={true}
 							target='_blank'
-							class='text-step--1 font-lato flex shadow-lg px-2 py-2 items-center gap-2 rounded-md bg-black text-white hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700 transition-shadow ease-in-out duration-300'
+							class='text-step--1 font-lato flex shadow-lg px-2 py-2 items-center gap-2 rounded-md bg-black text-white hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700 transition ease-in-out duration-300'
 						>
 							<p>Descargar CV</p>
 							<svg
