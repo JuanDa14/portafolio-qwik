@@ -23,7 +23,7 @@ export default component$(() => {
 						ágiles para garantizar resultados eficientes y de calidad.
 					</p>
 					<div class='flex justify-between items-center mt-4 md:mt-0'>
-						<SocialNetworks className='flex gap-2 items-center' />
+						<SocialNetworks class='flex gap-2 items-center' />
 						<a
 							href='/docs/Juan-Morales_CV.pdf'
 							title='Descargar CV'

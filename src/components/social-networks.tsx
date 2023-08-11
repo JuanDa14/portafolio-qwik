@@ -4,12 +4,12 @@ import { socials } from '~/data/seed';
 import Image from '~/components/image';
 
 interface Props {
-	className: string;
+	class: string;
 	showTitle?: boolean;
 	classNameLink?: string;
 }
 
-export default component$(({ className, classNameLink, showTitle }: Props) => {
+export default component$(({ classNameLink, showTitle, class: className }: Props) => {
 	return (
 		<ul class={className}>
 			{socials.map(({ href, title, icon }) => (
@@ -20,7 +20,7 @@ export default component$(({ className, classNameLink, showTitle }: Props) => {
 							height={35}
 							src={`/icons/${icon}.svg`}
 							alt={title}
-							className='dark:filter dark:invert hover:scale-125 transition-transform duration-200 ease-in-out'
+							class='dark:filter dark:invert hover:scale-125 transition-transform duration-200 ease-in-out'
 						/>
 					</a>
 					{showTitle && <span class='dark:text-white'>{title}</span>}

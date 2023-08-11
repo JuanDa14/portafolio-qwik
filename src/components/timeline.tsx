@@ -17,7 +17,7 @@ export default component$(() => {
 								<time class='mb-1 text-sm font-normal leading-none text-gray-700 dark:text-gray-200'>
 									{formatDate(project.createdAt)}
 								</time>
-								<span class='text-sm text-gray-700'> - </span>
+								<span class='text-sm text-gray-700 dark:text-gray-200'> - </span>
 								<time class='mb-1 text-sm font-normal leading-none text-gray-700 dark:text-gray-200'>
 									{project.updatedAt === currentDate
 										? 'Actualmente'

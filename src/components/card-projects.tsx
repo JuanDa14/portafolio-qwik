@@ -57,7 +57,7 @@ export default component$(() => {
 												height={25}
 												src='/icons/github.svg'
 												alt='github'
-												className='dark:filter dark:invert'
+												class='dark:filter dark:invert'
 											/>
 										</a>
 										<a
@@ -72,7 +72,7 @@ export default component$(() => {
 												height={25}
 												src='/icons/website.svg'
 												alt='send'
-												className='dark:filter dark:invert'
+												class='dark:filter dark:invert'
 											/>
 										</a>
 									</div>

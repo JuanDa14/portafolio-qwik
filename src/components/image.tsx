@@ -2,14 +2,14 @@ import { component$ } from '@builder.io/qwik';
 import { Image } from '@unpic/qwik';
 
 interface Props {
-	className?: string;
+	class?: string;
 	src: string;
 	alt: string;
 	width?: number;
 	height?: number;
 }
 
-export default component$(({ className, alt, src, width, height }: Props) => {
+export default component$(({ class: className, alt, src, width, height }: Props) => {
 	return (
 		<Image
 			layout='constrained'

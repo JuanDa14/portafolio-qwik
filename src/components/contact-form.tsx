@@ -1,10 +1,10 @@
-import { $, component$, useContext } from '@builder.io/qwik';
+import { $, type QRL, component$, useContext } from '@builder.io/qwik';
 import type { SubmitHandler } from '@modular-forms/qwik';
 import { reset, useForm, zodForm$ } from '@modular-forms/qwik';
 
 import { useContactFormLoader } from '~/routes';
 import { UIContext } from '~/context/ui/ui-context';
-import { ContactForm, contactSchema } from '~/models/contact-form-schema';
+import { type ContactForm, contactSchema } from '~/models/contact-form-schema';
 import { sendEmail } from '~/helpers/send-email';
 import InputForm from '~/components/input-form';
 
@@ -16,7 +16,7 @@ export default component$(() => {
 		validate: zodForm$(contactSchema),
 	});
 
-	const handleSubmit: SubmitHandler<ContactForm> = $(async (values: ContactForm) => {
+	const handleSubmit: QRL<SubmitHandler<ContactForm>> = $(async (values: ContactForm) => {
 		await sendEmail(values);
 		reset(contactForm);
 		showAlert.value = true;
