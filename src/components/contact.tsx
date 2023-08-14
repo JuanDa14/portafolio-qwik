@@ -38,7 +38,10 @@ export default component$(() => {
 						<p class='text-black dark:text-white mb-2 md:hidden'>
 							Puedes contactarme a través de este formulario o enviarme un correo electrónico
 							a{' '}
-							<a href='mailto:ju4ncode@gmail.com' class='text-blue-500 hover:underline'>
+							<a
+								href='mailto:ju4ncode@gmail.com'
+								class='dark:text-white font-medium hover:underline'
+							>
 								ju4ncode@gmail.com
 							</a>
 						</p>
