@@ -15,7 +15,7 @@ export default component$(({ class: className, alt, src, width, height }: Props)
 			layout='constrained'
 			width={width || 500}
 			height={height || 500}
-			alt={alt}
+			alt={`imagen de ${alt}`}
 			src={src}
 			class={className}
 		/>

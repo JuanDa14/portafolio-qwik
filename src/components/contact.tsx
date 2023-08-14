@@ -16,13 +16,14 @@ export default component$(() => {
 						<p class='text-black dark:text-white mb-2'>
 							Puedes contactarme a través de este formulario o enviarme un correo electrónico
 							a{' '}
-							<a href='mailto:ju4ncode@gmail.com' class='text-blue-500 hover:underline'>
+							<a
+								href='mailto:ju4ncode@gmail.com'
+								class='dark:text-white font-medium hover:underline'
+							>
 								ju4ncode@gmail.com
 							</a>
 						</p>
-						<p class='text-black dark:text-white mb-2'>
-							!No dudes en contactarme!
-						</p>
+						<p class='text-black dark:text-white mb-2'>!No dudes en contactarme!</p>
 						{/* <SocialNetworks
 							class='flex flex-col'
 							classNameLink='flex gap-2 items-center'
@@ -41,9 +42,7 @@ export default component$(() => {
 								ju4ncode@gmail.com
 							</a>
 						</p>
-						<p class='text-black dark:text-white mb-2 md:hidden'>
-							!No dudes en contactarme!
-						</p>
+						<p class='text-black dark:text-white mb-2 md:hidden'>!No dudes en contactarme!</p>
 						{/* <p class='flex-initial md:hidden text-black mb-4 dark:text-white'>
 							¿Tienes un proyecto que quieras discutir? ¡No dudes en contactarme!
 						</p> */}

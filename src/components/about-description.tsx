@@ -17,8 +17,8 @@ export default component$(() => {
 				atractivo, intuitivo y de alta calidad.
 			</p>
 			<p class='mb-4 text-gray-800 dark:text-white'>
-				Estoy siempre dispuesto a aprender nuevas tecnologías y a afrontar nuevos desafíos
-				laborales que me permitan seguir creciendo profesionalmente.
+				Estoy dispuesto a aprender nuevas tecnologías y afrontar nuevos desafíos laborales que
+				me permitan seguir creciendo profesionalmente.
 			</p>
 			<Experience />
 		</div>
